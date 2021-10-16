@@ -1,0 +1,57 @@
+{
+  "name": "Telegram File Hash Bot",
+  "description": "Telegram File Hash Bot. Demo @FileHashBot",
+    "keywords": [
+      "telegram",
+      "hash",
+      "file"
+    ],
+    "repository": "https://github.com/HuzunluArtemis",
+    "success_url": "https://t.me/HuzunluArtemis",
+    "website": "https://t.me/HuzunluArtemis",
+    "env": {
+      "ENV": {
+        "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+        "value": "ANYTHING",
+        "required": false
+      },
+      "APP_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "get this value from @BotFather",
+        "value": "",
+        "required": true
+      },
+      "AUTH_IDS": {
+        "description": "Read readme or leave it empty.",
+        "value": "",
+        "required": true
+      },
+      "BOT_USERNAME": {
+        "description": "Your bot's username. with or without @",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "Bot's owner id. Send /id to t.me/MissRose_bot in private to get your id.",
+        "value": "",
+        "required": true
+      }
+    },
+    "stack": "container",
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    }
+  }
+  
